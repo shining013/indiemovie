@@ -107,8 +107,5 @@ export default createStore({
         state.userData.splice(index, 1);
       }
     },
-    addTheater(state, payload) {
-      state.m_positions.push(payload);
-    },
   },
 });

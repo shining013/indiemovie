@@ -3,7 +3,7 @@
     <div class="row">
       <div class="row col-md-3 col-sm-3">
         <div class="">
-          <PositionListView @openModal="modalOpen" />
+          <PositionListView />
         </div>
       </div>
       <div class="row col-md-3">
@@ -23,9 +23,6 @@
       <div class="row">
         <div class="col-md-5 mb-3 col-sm-6">
           <MapView />
-        </div>
-        <div class="col-md-5 mb-3 col-sm-6">
-          <RestView />
         </div>
       </div>
     </div>
