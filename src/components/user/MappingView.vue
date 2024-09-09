@@ -54,7 +54,7 @@ const initMap = () => {
   };
 
   let map = new kakao.maps.Map(container, options);
-  var imageSrc = "src/assets/image/marker-home.png",
+  var imageSrc = "/image/marker-home.png",
     imageSize = new kakao.maps.Size(20, 20),
     imageOption = { offset: new kakao.maps.Point(27, 69) };
 
@@ -71,7 +71,7 @@ const initMap = () => {
   });
 
   //영화관 마커 생성
-  var m_imageSrc = "src/assets/image/marker-movie.png",
+  var m_imageSrc = "/image/marker-movie.png",
     m_imageSize = new kakao.maps.Size(20, 20),
     m_imageOption = { offset: new kakao.maps.Point(27, 69) };
 
