@@ -39,17 +39,20 @@ const store = useStore();
 const movieData = ref({
   content: null,
   address: null,
+  detail: null,
 });
 
 const clearform = () => {
   movieData.value.content = null;
   movieData.value.address = null;
+  movieData.value.detail = null;
 };
 
 const addTheater = () => {
   let mData = {
     content: movieData.value.content,
     address: movieData.value.address,
+    detail: movieData.value.detail,
   };
   store.commit("addTheater", mData);
   clearform();

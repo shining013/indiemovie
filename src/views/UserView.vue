@@ -20,17 +20,17 @@
         <h3>User sign</h3>
         <UserSignView />
       </div>
-
       <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-5 mb-3 col-sm-6">
           <MapView />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5 mb-3 col-sm-6">
           <RestView />
         </div>
       </div>
     </div>
   </div>
+  <ModalView />
 </template>
 
 <script setup>
@@ -40,6 +40,7 @@ import MapView from "../components/user/MappingView.vue";
 import RestView from "../components/user/RestView.vue";
 import PositionListView from "../components/user/PositionListView.vue";
 import PositionAddView from "../components/user/PositionAddView.vue";
+import ModalView from "../components/user/ModalView.vue";
 </script>
 
 <style lang="scss" scoped></style>
