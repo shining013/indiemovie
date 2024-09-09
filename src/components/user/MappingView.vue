@@ -54,22 +54,7 @@ const initMap = () => {
   };
 
   let map = new kakao.maps.Map(container, options);
-  var imageSrc = "/image/marker-home.png",
-    imageSize = new kakao.maps.Size(20, 20),
-    imageOption = { offset: new kakao.maps.Point(27, 69) };
-
-  var markerImage = new kakao.maps.MarkerImage(
-    imageSrc,
-    imageSize,
-    imageOption
-  );
-  var markerPosition = new kakao.maps.LatLng(latitude.value, longitude.value);
-
-  var marker = new kakao.maps.Marker({
-    position: markerPosition,
-    image: markerImage,
-  });
-
+ 
   //영화관 마커 생성
   var m_imageSrc = "/image/marker-movie.png",
     m_imageSize = new kakao.maps.Size(20, 20),
@@ -177,12 +162,6 @@ const initMap = () => {
   }
 
   //지도 중심좌표
-  kakao.maps.event.addListener(map, "center_changed", function () {
-    var latlng = map.getCenter();
-
-    moveLat.value = latlng.getLat();
-    moveLng.value = latlng.getLng();
-  });
 };
 </script>
 

@@ -1,6 +1,7 @@
 <template>
   <NavbarView />
   <router-view></router-view>
+  <div class="container py-2"></div>
 </template>
 
 <script setup>

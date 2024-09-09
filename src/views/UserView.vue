@@ -30,7 +30,6 @@
       </div>
     </div>
   </div>
-  <ModalView />
 </template>
 
 <script setup>
@@ -40,7 +39,6 @@ import MapView from "../components/user/MappingView.vue";
 import RestView from "../components/user/RestView.vue";
 import PositionListView from "../components/user/PositionListView.vue";
 import PositionAddView from "../components/user/PositionAddView.vue";
-import ModalView from "../components/user/ModalView.vue";
 </script>
 
 <style lang="scss" scoped></style>
